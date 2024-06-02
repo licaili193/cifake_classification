@@ -1,2 +1,5 @@
 data
 .ipynb_checkpoints
+tuxmon_2.png
+tuxmon.png
+tuxmon_lora/pytorch_lora_weights.safetensors

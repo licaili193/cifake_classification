@@ -14,7 +14,7 @@ def generate_images(prompt, modifiers, negative_prompt, num_images, batch_size, 
     pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
     pipe = pipe.to("cuda")
 
-    name_offset = 816
+    name_offset = 10476
     # Generate the specified number of images
     index = 0
     while index < num_images:
@@ -32,7 +32,7 @@ def generate_images(prompt, modifiers, negative_prompt, num_images, batch_size, 
 fixed_prompt = "a photograph of a cat"
 modifiers = ["indoors", "outdoor", "walking", "running", "sleeping", "eating", "jumping", "sitting"]
 negative_prompt = "blurry, distorted, low qualiaty, low resolution, pixelated, noisy, abstract, surreal, unrealistic, cartoonish, animated, illustrated, painted, drawn, sketch, sketchy, sketch-like, sketchbook, doodle"
-num_images = 12500-816
+num_images = 12500-10476
 batch_size = 4
 output_folder = "data/sd_2_1_cats_with_modifiers_2"
 
